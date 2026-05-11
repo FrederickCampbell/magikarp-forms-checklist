@@ -1,0 +1,38 @@
+{
+  "name": "magikarp-forms-checklist",
+  "version": "1.0.0",
+  "description": "Offline Magikarp forms checklist.",
+  "main": "src/main.js",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.local.magikarpformschecklist",
+    "productName": "Magikarp Forms Checklist",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Magikarp-Forms-Checklist-Portable.exe"
+    }
+  }
+}

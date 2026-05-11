@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline';"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magikarp Forms Checklist</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="titlebar">
+    <div class="title-left">
+      <span class="dot"></span>
+      <span>Magikarp Forms Checklist</span>
+    </div>
+
+    <div class="window-buttons">
+      <button id="minimize" title="Minimize">-</button>
+      <button id="maximize" title="Maximize">□</button>
+      <button id="close" class="close" title="Close">×</button>
+    </div>
+  </div>
+
+  <main class="app">
+    <section class="header">
+      <div>
+        <h1>Magikarp Forms</h1>
+        <p class="subtitle">Offline checklist. Four per row. Saves automatically.</p>
+      </div>
+
+      <div class="actions">
+        <span id="counter" class="counter">0/20 checked</span>
+        <button id="reset" class="reset">Reset</button>
+      </div>
+    </section>
+
+    <section class="grid">
+        <label class="card" data-form="magikarp">
+          <input type="checkbox" aria-label="Normal checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarp.png" alt="Normal Magikarp" />
+          </div>
+          <div class="name">Normal</div>
+        </label>
+        <label class="card" data-form="magikarpskelly">
+          <input type="checkbox" aria-label="Skelly checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpskelly.png" alt="Skelly Magikarp" />
+          </div>
+          <div class="name">Skelly</div>
+        </label>
+        <label class="card" data-form="magikarpcalico1">
+          <input type="checkbox" aria-label="Calico1 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpcalico1.png" alt="Calico1 Magikarp" />
+          </div>
+          <div class="name">Calico1</div>
+        </label>
+        <label class="card" data-form="magikarpcalico2">
+          <input type="checkbox" aria-label="Calico2 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpcalico2.png" alt="Calico2 Magikarp" />
+          </div>
+          <div class="name">Calico2</div>
+        </label>
+        <label class="card" data-form="magikarpcalico3">
+          <input type="checkbox" aria-label="Calico3 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpcalico3.png" alt="Calico3 Magikarp" />
+          </div>
+          <div class="name">Calico3</div>
+        </label>
+        <label class="card" data-form="magikarptwotone">
+          <input type="checkbox" aria-label="Twotone checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarptwotone.png" alt="Twotone Magikarp" />
+          </div>
+          <div class="name">Twotone</div>
+        </label>
+        <label class="card" data-form="magikarporca">
+          <input type="checkbox" aria-label="Orca checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarporca.png" alt="Orca Magikarp" />
+          </div>
+          <div class="name">Orca</div>
+        </label>
+        <label class="card" data-form="magikarpdapples">
+          <input type="checkbox" aria-label="Dapples checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpdapples.png" alt="Dapples Magikarp" />
+          </div>
+          <div class="name">Dapples</div>
+        </label>
+        <label class="card" data-form="magikarptiger">
+          <input type="checkbox" aria-label="Tiger checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarptiger.png" alt="Tiger Magikarp" />
+          </div>
+          <div class="name">Tiger</div>
+        </label>
+        <label class="card" data-form="magikarpzebra">
+          <input type="checkbox" aria-label="Zebra checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpzebra.png" alt="Zebra Magikarp" />
+          </div>
+          <div class="name">Zebra</div>
+        </label>
+        <label class="card" data-form="magikarpstripe">
+          <input type="checkbox" aria-label="Stripe checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpstripe.png" alt="Stripe Magikarp" />
+          </div>
+          <div class="name">Stripe</div>
+        </label>
+        <label class="card" data-form="magikarpbubbles">
+          <input type="checkbox" aria-label="Bubbles checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpbubbles.png" alt="Bubbles Magikarp" />
+          </div>
+          <div class="name">Bubbles</div>
+        </label>
+        <label class="card" data-form="magikarpdiamonds">
+          <input type="checkbox" aria-label="Diamonds checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpdiamonds.png" alt="Diamonds Magikarp" />
+          </div>
+          <div class="name">Diamonds</div>
+        </label>
+        <label class="card" data-form="magikarppatches">
+          <input type="checkbox" aria-label="Patches checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarppatches.png" alt="Patches Magikarp" />
+          </div>
+          <div class="name">Patches</div>
+        </label>
+        <label class="card" data-form="magikarpforehead1">
+          <input type="checkbox" aria-label="Forehead1 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpforehead1.png" alt="Forehead1 Magikarp" />
+          </div>
+          <div class="name">Forehead1</div>
+        </label>
+        <label class="card" data-form="magikarpmask1">
+          <input type="checkbox" aria-label="Mask1 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpmask1.png" alt="Mask1 Magikarp" />
+          </div>
+          <div class="name">Mask1</div>
+        </label>
+        <label class="card" data-form="magikarpforehead2">
+          <input type="checkbox" aria-label="Forehead2 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpforehead2.png" alt="Forehead2 Magikarp" />
+          </div>
+          <div class="name">Forehead2</div>
+        </label>
+        <label class="card" data-form="magikarpmask2">
+          <input type="checkbox" aria-label="Mask2 checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpmask2.png" alt="Mask2 Magikarp" />
+          </div>
+          <div class="name">Mask2</div>
+        </label>
+        <label class="card" data-form="magikarpsaucy">
+          <input type="checkbox" aria-label="Saucy checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpsaucy.png" alt="Saucy Magikarp" />
+          </div>
+          <div class="name">Saucy</div>
+        </label>
+        <label class="card" data-form="magikarpraindrop">
+          <input type="checkbox" aria-label="Raindrop checked" />
+          <div class="sprite-wrap">
+            <img src="./assets/sprites/magikarpraindrop.png" alt="Raindrop Magikarp" />
+          </div>
+          <div class="name">Raindrop</div>
+        </label>
+    </section>
+  </main>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
