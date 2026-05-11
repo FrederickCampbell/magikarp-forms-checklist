@@ -4,7 +4,7 @@
   "description": "Offline Magikarp forms checklist.",
   "main": "src/main.js",
   "private": true,
-  "author": "",
+  "author": "FrederickCampbell",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
@@ -24,6 +24,7 @@
       "src/**/*"
     ],
     "win": {
+      "icon": "build/icon.ico",
       "target": [
         {
           "target": "portable",
