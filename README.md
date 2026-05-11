@@ -4,13 +4,19 @@ A small offline Electron checklist for the 20 PolishedDex Magikarp forms.
 
 ## Features
 
-- Local images
-- Works offline after build
+- Local sprite images
+- Works offline after download/build
 - Four forms per row
 - Dark mode interface
 - Clean frameless window
 - Custom minimize, maximize, and close buttons
 - Saves checked forms locally
+
+## Download
+
+If you just want to use the app, download the portable EXE from the Releases page.
+
+No installation is required.
 
 ## Development
 
@@ -33,5 +39,3 @@ The finished EXE appears in:
 ## Notes
 
 The source is intentionally simple so people can inspect it before running the app.
-
-Do not commit node_modules or release builds to GitHub. They are ignored by default.
